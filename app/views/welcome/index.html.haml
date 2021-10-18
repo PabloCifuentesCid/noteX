@@ -1,2 +1,17 @@
-%h1 FileX 
-%p This is a lookalike application 
+#banner
+    .banner_content    
+        %h1 NoteX
+        %p Organize your ideas. Keep it NoteX. 
+        %button= link_to "Join Now", new_user_registration_path 
+
+#callouts 
+    .callout_inner 
+        .wrapper 
+            .callout 
+                %h2 Note it
+                %p Evernote-alike app built in Ruby on %Rails 
+#bottom_cta 
+    .wrapper 
+        %h2 Go Ahead! 
+        %br/
+        %button= link_to "Join Now", new_user_registration_path  
