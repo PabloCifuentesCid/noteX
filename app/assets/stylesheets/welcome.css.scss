@@ -3,7 +3,11 @@
 // You can use Sass (SCSS) here: https://sass-lang.com/
 
 // STYLING FOR WELCOME PAGE
-
+@mixin bold_font {
+	font-family: 'Dosis', sans-serif;
+	  font-weight: bold;
+	  text-transform: uppercase;
+  }
 #banner {
 	background-image: url(image_path("welcome_banner_image.jpg"));
 	background-size: cover;
@@ -40,7 +44,7 @@
 	}
 	.name {
 		@include bold_font;
-		color: $dark_gray;
+		color: dark_gray;
 		margin: 0;
 		font-size: .85rem;
 	}
@@ -79,7 +83,7 @@
 	padding: 7.5rem 0;
 	h2 {
 		@include bold_font;
-		color: $dark_gray;
+		color: dark_gray;
 		font-size: 3rem;
 		margin: 0;
 	}

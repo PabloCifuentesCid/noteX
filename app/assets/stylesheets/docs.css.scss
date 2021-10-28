@@ -1,6 +1,11 @@
 // Place all the styles related to the Docs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+@mixin bold_font {
+	font-family: 'Dosis', sans-serif;
+	  font-weight: bold;
+	  text-transform: uppercase;
+  }
 #docs {
 	.doc {
 		background: lightgray;
@@ -13,7 +18,7 @@
 		position: relative;
 		text-align: center;
 		.title {
-			@include boldfont;
+			@include bold_font;
 			color: rgb(255, 68, 68);
 			margin: 0;
 			left: 4.5%;
@@ -33,7 +38,7 @@
 			position: absolute;
 			bottom: .25rem;
 			left: 27.5%;
-			color: $light_gray;
+			color: light_gray;
 			font-weight: bold;
 			font-size: .75rem;
 			text-align: left;
